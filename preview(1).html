@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Avícola</title>
+
+    <!-- Redirección -->
+    <meta http-equiv="refresh" content="4;url=https://script.google.com/macros/s/AKfycbx6raorZG8zueSQW7X3OZtI8cdC9kS-AhQkf8p5PGwAU4Hm93sF3Tu-Q8lIS34TDzCT6g/exec">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f4f6f8;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2c3e50;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 35px 30px;
+            width: 90%;
+            max-width: 420px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1f2937;
+        }
+
+        .divider {
+            width: 40px;
+            height: 3px;
+            background: #f97316; /* naranja institucional */
+            margin: 10px auto 20px;
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        /* Barra de carga */
+        .progress {
+            width: 100%;
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #f97316; /* naranja */
+            animation: load 4s linear forwards;
+        }
+
+        @keyframes load {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #f97316;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #ea580c;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Sistema JJL Avícola</h1>
+            <div class="divider"></div>
+        </div>
+
+        <p>Inicializando plataforma de gestión...</p>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <p>Redirigiendo automáticamente.</p>
+
+        <a class="btn" href="https://script.google.com/macros/s/AKfycbx6raorZG8zueSQW7X3OZtI8cdC9kS-AhQkf8p5PGwAU4Hm93sF3Tu-Q8lIS34TDzCT6g/exec">
+            Acceder manualmente
+        </a>
+
+        <div class="footer">
+            © 2026 Sistema Avícola
+        </div>
+    </div>
+
+</body>
+</html>
