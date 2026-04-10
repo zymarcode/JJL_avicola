@@ -16,41 +16,46 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            
-            /* 🔥 IMAGEN DE FONDO */
-            background: url('https://images.unsplash.com/photo-1589927986089-35812388d1f4') no-repeat center center/cover;
-            
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
+            overflow: hidden;
         }
 
-        /* 🔥 CAPA OSCURA PARA MEJOR VISIBILIDAD */
-        body::before {
-            content: "";
-            position: absolute;
+        /* 🔥 FONDO CON IMAGEN */
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://grupohyt.com/images/xgranja-pollos_interior.jpg.pagespeed.ic_.ADsfVvhkxr.jpg') no-repeat center center/cover;
+            
+            /* 🔥 EFECTO BORROSO */
+            filter: blur(8px);
+            transform: scale(1.1); /* evita bordes blancos */
+            z-index: -2;
+        }
+
+        /* 🔥 CAPA OSCURA ENCIMA */
+        .overlay {
+            position: fixed;
             width: 100%;
             height: 100%;
             background: rgba(0,0,0,0.5);
-            top: 0;
-            left: 0;
+            z-index: -1;
         }
 
         .container {
-            position: relative;
             background: rgba(255,255,255,0.95);
-            border-radius: 8px;
+            border-radius: 10px;
             padding: 35px 30px;
             width: 90%;
             max-width: 420px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             text-align: center;
-            z-index: 1;
         }
 
-        .header h1 {
+        h1 {
             font-size: 1.5rem;
             color: #1f2937;
         }
@@ -106,6 +111,10 @@
 </head>
 <body>
 
+<!-- 🔥 FONDO -->
+<div class="background"></div>
+<div class="overlay"></div>
+
 <div class="container">
     <h1>Sistema JJL Avícola</h1>
     <div class="divider"></div>
@@ -118,7 +127,7 @@
 
     <p>Redirigiendo...</p>
 
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbx6raorZG8zueSQW7X3OZtI8cdC9kS-AhQkf8p5PGwAU4Hm93sF3Tu-Q8lIS34TDzCT6g/exec">
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbx6raorZG8zueSQW7X3OZtI8cdC9kS-AhQkf8p5PGwAU4Hm93sF3Tu-Q8lI S34TDzCT6g/exec">
         Acceder
     </a>
 
