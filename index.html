@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema JJL Avícola</title>
 
-    <!-- Google Font PRO -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -16,7 +16,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -24,7 +24,7 @@
             overflow: hidden;
         }
 
-        /* 🔥 Fondo con blur */
+        /* Fondo borroso */
         .background {
             position: fixed;
             width: 100%;
@@ -35,34 +35,30 @@
             z-index: -2;
         }
 
-        /* 🔥 Capa oscura */
         .overlay {
             position: fixed;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.4);
             z-index: -1;
         }
 
-        /* 🔥 Contenedor PRO */
+        /* 🔥 Caja blanca PRO */
         .container {
-            backdrop-filter: blur(12px);
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 16px;
-            padding: 40px 30px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 40px 35px;
             width: 90%;
             max-width: 420px;
             text-align: center;
-            color: #fff;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-            animation: fadeIn 1s ease;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            animation: fadeIn 0.8s ease;
         }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(15px);
             }
             to {
                 opacity: 1;
@@ -71,14 +67,15 @@
         }
 
         h1 {
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            margin-bottom: 10px;
+            color: #111827;
+            margin-bottom: 8px;
         }
 
         .subtitle {
-            font-size: 0.95rem;
-            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            color: #6b7280;
             margin-bottom: 25px;
         }
 
@@ -93,7 +90,7 @@
         .progress {
             width: 100%;
             height: 6px;
-            background: rgba(255,255,255,0.2);
+            background: #e5e7eb;
             border-radius: 10px;
             overflow: hidden;
             margin-bottom: 25px;
@@ -113,7 +110,7 @@
 
         .status {
             font-size: 0.9rem;
-            color: rgba(255,255,255,0.8);
+            color: #4b5563;
             margin-bottom: 25px;
         }
 
@@ -131,13 +128,13 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(249,115,22,0.4);
+            box-shadow: 0 8px 20px rgba(249,115,22,0.3);
         }
 
         .footer {
             margin-top: 25px;
             font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
+            color: #9ca3af;
         }
     </style>
 </head>
@@ -150,19 +147,19 @@
     <h1>Sistema JJL Avícola</h1>
     <div class="divider"></div>
 
-    <p class="subtitle">Gestión inteligente de producción avícola</p>
+    <p class="subtitle">Plataforma de gestión y control de producción</p>
 
     <div class="progress">
         <div class="progress-bar"></div>
     </div>
 
-    <p class="status">Cargando sistema, por favor espere...</p>
+    <p class="status">Cargando sistema, espere un momento...</p>
 
     <a class="btn" href="https://script.google.com/macros/s/AKfycbx6raorZG8zueSQW7X3OZtI8cdC9kS-AhQkf8p5PGwAU4Hm93sF3Tu-Q8lIS34TDzCT6g/exec">
-        Acceder ahora
+        Ingresar al sistema
     </a>
 
-    <div class="footer">© 2026 Sistema Avícola • Todos los derechos reservados</div>
+    <div class="footer">© 2026 JJL Avícola</div>
 </div>
 
 <script>
